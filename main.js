@@ -16,9 +16,6 @@ function createWindow() {
 
   // Load ChatGPT in the window
   mainWindow.loadURL('https://www.chatgpt.com/chat');
-
-  // Open DevTools for debugging
-  mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', () => {

@@ -5,13 +5,29 @@
   "main": "main.js",
   "scripts": {
     "start": "npx electron .",
-    "dev": "npx electron ."
+    "dev": "npx electron .",
+    "build": "electron-builder"
   },
   "dependencies": {
-    "electron": "^22.3.7",
     "electron-store": "^8.1.0"
   },
   "devDependencies": {
+    "electron": "^22.3.7",
+    "electron-builder": "^24.6.4",
     "electron-rebuild": "^3.2.9"
+  },
+  "author": {
+    "name": "Maui1911",
+    "email": "maui1911@gmail.com"
+  },
+  "build": {
+    "appId": "com.maui1911.gpt-wrapper",
+    "productName": "ChatGPT Wrapper",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg",
+      "icon": "assets/icon"
+    },
+    "icon": "assets/icon"
   }
 }
